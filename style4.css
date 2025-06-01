@@ -1,0 +1,98 @@
+<style>
+    /* ... existing desktop styles ... */
+
+    @media screen and (max-width: 768px) {
+        /* Make container fluid */
+        .container {
+            width: 100%;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        
+        /* Stack columns */
+        .columns {
+            flex-direction: column;
+        }
+        
+        /* Convert nav to hamburger menu */
+        .nav-menu {
+            flex-direction: column;
+            gap: 10px;
+            display: none;
+        }
+        
+        /* Add hamburger button */
+        .menu-toggle {
+            display: block;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Scale images */
+        .hero-image {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        
+        /* Reduce font sizes */
+        body {
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+@media screen and (max-width: 768px) {
+    /* Prevent horizontal scrolling */
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    /* Ensure content doesn't overflow */
+    .sidebar, .main {
+        width: 100% !important;
+    }
+}
+<style>
+    /* Desktop styles */
+    .container { width: 1200px; margin: 0 auto; }
+    .columns { display: flex; }
+    .nav-menu { display: flex; gap: 30px; }
+    .hero-image { width: 1000px; height: 500px; }
+    .menu-toggle { display: none; }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+        .container { width: 100%; padding: 0 15px; }
+        .columns { flex-direction: column; }
+        .nav-menu { 
+            flex-direction: column; 
+            gap: 10px;
+            display: none;
+        }
+        .menu-toggle { display: block; }
+        .hero-image { width: 100%; height: auto; }
+        body { font-size: 14px; }
+        h1 { font-size: 1.5rem; }
+        html, body { overflow-x: hidden; }
+        img { max-width: 100%; height: auto; }
+    }
+</style>
+@media (max-width: 768px) {
+    /* Better touch targets */
+    a, button {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+    }
+    
+    /* Prevent zoom on input focus */
+    input, select, textarea {
+        font-size: 16px;
+    }
+}
