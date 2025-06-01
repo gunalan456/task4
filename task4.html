@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Makeover</title>
+    <style>
+        /* Existing desktop styles */
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .columns {
+            display: flex;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+        }
+        .hero-image {
+            width: 1000px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+    </nav>
+    
+    <div class="container">
+        <div class="columns">
+            <div class="sidebar">Sidebar content</div>
+            <div class="main">Main content</div>
+        </div>
+        <img src="hero.jpg" class="hero-image" alt="Large hero image">
+    </div>
+</body>
+</html>
